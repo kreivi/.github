@@ -1,0 +1,47 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - kreivi
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+
+  - type: markdown
+    attributes:
+      value: |
+        High quality report makes it easier for developers to understand the underlying problem so try to answer as many of the fields as possible and as accurately you can.
+
+  - type: checkboxes
+    id: check-issues
+    attributes:
+      label: I have searched that the issue has not been reported.
+      description: Duplicate issues take precious time so please check if the issue has been reported before submitting. 
+      options:
+        - label: Yes
+          required: true
+
+  - type: input
+    attributes:
+      label: Version
+      description: |
+        Version number or Git commit hash where the bug was encountered in.
+      placeholder: 1.0.0
+
+  - type: textarea
+    attributes:
+      label: Issue description
+      description: |
+        Describe encountered issue briefly. What doesn't work, and how do you expect it to work instead?
+        You can include images or videos with drag and drop, and format code blocks or logs with <code>```</code> tags.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: |
+        List of steps or sample code that reproduces the issue (if applicaple). Reproduction steps helps immensively when trying to resolve issues.
