@@ -9,20 +9,8 @@ body:
     attributes:
       value: |
         Thank you for taking the time to fill out this bug report!
-
-  - type: markdown
-    attributes:
-      value: |
+        Please make sure this issue hasn't been reported previously by searching open & closed issues.
         High quality report makes it easier for developers to understand the underlying problem so try to answer as many of the fields as possible and as accurately you can.
-
-  - type: checkboxes
-    id: check-issues
-    attributes:
-      label: I have searched that the issue has not been reported.
-      description: Duplicate issues take precious time so please check if the issue has been reported before submitting. 
-      options:
-        - label: Yes
-          required: true
 
   - type: input
     attributes:
